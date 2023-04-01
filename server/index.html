@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav id="topnav">
+            <a id="home" class="active" href="/"><i class="fa fa-home"></i></a>
+            <a href="https://bcb206.wixsite.com/pyroprotector">About us</a>
+            <a href="https://www.youtube.com/watch?v=eBGIQ7ZuuiU">Sensors used</a>
+            <a href="/email-registration.html">Register my email</a>
+            <a href="/changePosition.html">Change device position</a>
+            <a href="/sampleRate.html">Change sample rate</a>
+        </nav>
+
+        <!-- <div id="grid">
+            <div id="grid-item-0">succ</div>
+            <div id="grid-item-1">succ</div>
+            <div id="grid-item-2">succ</div>
+            <div id="grid-item-3">succ</div>
+            <div id="grid-item-4">succ</div>
+            <div id="grid-item-5">succ</div>
+            <div id="grid-item-6">succ</div>
+            <div id="grid-item-7">succ</div>
+            <div id="grid-item-8">succ</div>
+        </div> -->    
+        
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <div id="map" style="height: 600px; width:100%;"></div>
+        <div id="form"></div>
+        <p id="res"></p>
+        <div id="grid"></div>
+        <!--
+        <script>
+            function initMap(){var lat = 51.498356;
+                var lng =  -0.176894;
+                var myLatLng = new google.maps.LatLng(lat, lng);
+                
+                var mapOptions = {
+                  zoom: 12,
+                  center: myLatLng,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                
+                var map = new google.maps.Map(document.getElementById("grid"), mapOptions);
+                }
+        </script>
+        
+-->     
+        <script src="./src/Compiled_maps.js"></script>      
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOiFIydMRHZwxO1VqD36D0y-DcNgrZY3g&callback=initMap"></script>
+        <script src="/src/init.js" crossorigin></script>
+        <script src="/src/Compiled_sampleRate.js" crossorigin></script>
+
+        
+        
+        <!-- <script>
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }    
+            async function main(){
+                var bool = true;
+                while(bool){
+                    await sleep(10000);
+                    fetch('http://localhost:8080/api/cachedData').then((res) => {
+                        return res.json()
+                    }).catch(() => {
+                        bool = false;
+                    }).then((data) => {
+                        Object.values(data).forEach(element => {
+                            const el = document.getElementById(`grid-${element.x_pos}-${element.j_pos}`);
+                            el.style.visibility = 'visible';
+                        });    
+                        document.getElementById("res").innerHTML = JSON.stringify(data);
+                    }).catch(() => {
+                        bool = false;
+                    });    
+                }    
+            }    
+            main()
+        </script>     -->
+
+        <!-- <script src="http://localhost:8080/test.js" crossorigin></script> -->
+    </body>
+
+</html>

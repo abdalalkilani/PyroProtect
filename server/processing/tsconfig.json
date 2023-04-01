@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "removeComments": true,
+        "outDir": "../include/"
+    },
+    "include": ["./"]
+}
