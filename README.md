@@ -5,6 +5,7 @@ We use a Raspberry PI Zero WH with a temperature sensor, gas sensor, wind sensor
 
 *For more information, visit [Pyro Protect's marketing webpage](https://bcb206.wixsite.com/pyroprotector).
 
+&nbsp; 
 ## Running code
 
 To run the code, for example if the code has been cloned to a server, navigate to the [server](/server/) folder and run the command:
@@ -15,9 +16,12 @@ Then navigate to the [website](http://13.41.188.158:8080.).
 
 When the sensors are not connected, however, the website will display unusual (sometimes simulated) outputs.
 
+&nbsp;  
+
 _Note: The Jupyter Notebooks (developed on Google Colab) included in this repository are experimental examples of the algorithms in the backend._
 _One of the future plans is to integrate all of the trained neural networks on the Google Cloud server using Google AutoML._
 
+&nbsp;  
 ## Raspberry PI
 
 ### Sensor Setup
