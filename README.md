@@ -3,15 +3,20 @@
 Internet of Things (IoT) device network that generates a probability map for the location of a fire outbreak in a specific area.
 We use a Raspberry PI Zero WH with a temperature sensor, gas sensor, wind sensor and a rain sensor to read mesurements and send them to a server, which processes the data and comes up with the probability map. The server also distributes HTML files and JavaScript code for the website.
 
+*For more information, visit [Pyro Protect's marketing webpage](https://bcb206.wixsite.com/pyroprotector).
+
 ## Running code
 
 To run the code, for example if the code has been cloned to a server, navigate to the [server](/server/) folder and run the command:
 ```
 node index.js
 ```
-Then navigate to website http://13.41.188.158:8080.
+Then navigate to the [website](http://13.41.188.158:8080.).
 
-When the sensors are not connected however, the website will display unusual (sometimes simulated) outputs.
+When the sensors are not connected, however, the website will display unusual (sometimes simulated) outputs.
+
+_Note: The Jupyter Notebooks (developed on Google Colab) included in this repository are experimental examples of the algorithms in the backend._
+_One of the future plans is to integrate all of the trained neural networks on the Google Cloud server using Google AutoML._
 
 ## Raspberry PI
 
