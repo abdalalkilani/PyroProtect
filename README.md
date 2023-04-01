@@ -3,6 +3,13 @@
 Internet of Things (IoT) device network that generates a probability map for the location of a fire outbreak in a specific area.
 We use a Raspberry PI Zero WH with a temperature sensor, gas sensor, wind sensor and a rain sensor to read mesurements and send them to a server, which processes the data and comes up with the probability map. The server also distributes HTML files and JavaScript code for the website.
 
+## Running code
+
+To run the code, for example if the code has been cloned to a server, navigate to the [server](/server/) folder and run the command:
+```
+node index.js
+```
+
 ## Raspberry PI
 
 ### Sensor Setup
