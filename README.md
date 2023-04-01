@@ -9,7 +9,9 @@ To run the code, for example if the code has been cloned to a server, navigate t
 ```
 node index.js
 ```
-Then navigate to website http://13.41.188.158:8080
+Then navigate to website http://13.41.188.158:8080.
+
+When the sensors are not connected however, the website will display unusual (sometimes simulated) outputs.
 
 ## Raspberry PI
 
